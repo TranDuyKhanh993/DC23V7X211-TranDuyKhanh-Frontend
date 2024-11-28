@@ -85,7 +85,7 @@ export default {
         },
         Cancel() {
             const reply = window.confirm('You have unsaved changes! Do you want to leave ? ')
-if (!reply) {
+        if (!reply) {
                 // stay on the page if
                 // user clicks 'Cancel'
                 return false

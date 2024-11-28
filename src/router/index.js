@@ -17,6 +17,12 @@ const routes = [
     component: () => import("@/views/ContactEdit.vue"),
     props: true // Truyền các biến trong $route.params vào làm props
     },
+    {
+    path: "/contacts/new",
+    name: "contact.add",
+    component: () => import("@/views/ContactForm.vue"),
+    props: { id: null }, // Đặt id = null khi thêm mới
+  },
 ];
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
